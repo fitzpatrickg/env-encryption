@@ -1,0 +1,17 @@
+{
+  "name": "env-encryptor-master",
+  "version": "1.0.0",
+  "description": "This encryption module is meant to encrypt & decrypt environment variables. The idea is you can push your encrypted.env to your repo & keep the password in a seperate place. When pulling the repo to a new machien, you only need the password to have access to all the environment variables.",
+  "main": "src/encrypt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-password": "node src/createPassword.js",
+    "encrypt": "node src/encrypt.js",
+    "decrypt": "node src/decrypt.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
